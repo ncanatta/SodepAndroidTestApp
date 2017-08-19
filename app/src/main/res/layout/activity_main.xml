@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgColor">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="300dp"
+            android:inputType="numberSigned|numberDecimal"/>
+
+        <TextView
+            android:id="@+id/currency_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="4dp"
+            android:text="--"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText1"
+        android:layout_below="@+id/editText1">
+
+        <RadioButton
+            android:id="@+id/radio_gs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/gs" />
+
+        <RadioButton
+            android:id="@+id/radio_uss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/uss" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/calculate_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/radio_group"
+        android:layout_below="@+id/radio_group"
+        android:layout_marginTop="22dp"
+        android:text="@string/calc"
+        android:onClick="onClick"/>
+
+</LinearLayout>
+
+
+

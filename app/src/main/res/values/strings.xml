@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">Currency Converter</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="gs">to Gs</string>
+    <string name="uss">to Uss</string>
+    <string name="calc">Calculate</string>
+
+</resources>
